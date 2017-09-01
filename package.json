@@ -1,8 +1,7 @@
 {
   "name": "bcccore-p2p",
   "version": "0.0.1",
-  "description": "Interface to the bitcoin P2P network for bcccore",
-  "author": "Open Wallet Stack",
+  "description": "Interface to the bitcoin cash P2P network for bcccore.",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -10,43 +9,6 @@
     "coverage": "gulp coverage",
     "build": "gulp"
   },
-  "contributors": [
-    {
-      "name": "Yemel Jardi",
-      "email": "yemel@bitpay.com"
-    },
-    {
-      "name": "Braydon Fuller",
-      "email": "braydon@bitpay.com"
-    },
-    {
-      "name": "Ryan X. Charles",
-      "email": "ryan@bitpay.com"
-    },
-    {
-      "name": "Eric Martindale",
-      "email": "eric@bitpay.com"
-    },
-    {
-      "name": "Philip Hutchins",
-      "email": "philip@bitpay.com"
-    },
-    {
-      "name": "Manuel Araoz",
-      "email": "maraoz@bitpay.com"
-    },
-    {
-      "name": "Esteban Ordano",
-      "email": "eordano@gmail.com"
-    },
-    {
-      "name": "Elichai Turkel"
-    },
-    {
-      "name": "Chris Kleeschulte",
-      "email": "chrisk@bitpay.com"
-    }
-  ],
   "keywords": [
     "bitcoin",
     "bcccore"
@@ -56,13 +18,13 @@
     "url": "https://github.com/owstack/bcccore-p2p.git"
   },
   "dependencies": {
-    "bcccore-lib": "git://github.com/owstack/bcccore-lib.git",
+    "bcccore-lib": "https://github.com/owstack/bcccore-lib.git",
     "bloom-filter": "^0.2.0",
-    "buffers": "owstack/node-buffers",
+    "buffers": "https://github.com/owstack/node-buffers",
     "socks5-client": "^0.3.6"
   },
   "devDependencies": {
-    "bcccore-build": "git://github.com/owstack/bcccore-build.git",
+    "bcccore-build": "https://github.com/owstack/bcccore-build.git",
     "brfs": "^1.2.0",
     "chai": "~1.10.0",
     "gulp": "^3.8.10",
