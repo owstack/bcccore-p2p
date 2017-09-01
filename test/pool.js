@@ -269,7 +269,7 @@ describe('Pool', function() {
 
   it('output the console correctly', function() {
     var pool = new Pool();
-    pool.inspect().should.equal('<Pool network: livenet/bcc, connected: 0, available: 0>');
+    pool.inspect().should.equal('<Pool network: livenet, connected: 0, available: 0>');
   });
 
   it('emit seederrors with error', function(done) {
