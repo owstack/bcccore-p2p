@@ -1,5 +1,3 @@
-<img src="http://bcccore.io/css/images/bcccore-p2p.svg" alt="bcccore payment protocol" height="35" width="102">
-
 Bcccore P2P
 =======
 
@@ -7,7 +5,7 @@ Bcccore P2P
 [![Build Status](https://img.shields.io/travis/owstack/bcccore-p2p.svg?branch=master&style=flat-square)](https://travis-ci.org/owstack/bcccore-p2p)
 [![Coverage Status](https://img.shields.io/coveralls/owstack/bcccore-p2p.svg?style=flat-square)](https://coveralls.io/r/owstack/bcccore-p2p?branch=master)
 
-`bcccore-p2p` adds [Bitcoin protocol](https://en.bitcoin.it/wiki/Protocol_documentation) support for Bcccore.
+Adds [Bitcoin protocol](https://en.bitcoin.it/wiki/Protocol_documentation) support for Bcccore.
 
 See [the main bcccore repo](https://github.com/owstack/bcccore) for more information.
 
