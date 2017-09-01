@@ -21,21 +21,21 @@ var Block = bcccore.Block;
 var Transaction = bcccore.Transaction;
 
 // config 
-var network = process.env.NETWORK === 'testnet/bcc' ? Networks.testnet : Networks.livenet;
+var network = process.env.NETWORK === 'testnet' ? Networks.testnet : Networks.livenet;
 var messages = new Messages({
   network: network
 });
 var blockHash = {
-  'livenet/bcc': '000000000000000013413cf2536b491bf0988f52e90c476ffeb701c8bfdb1db9',
-  'testnet/bcc': '0000000058cc069d964711cd25083c0a709f4df2b34c8ff9302ce71fe5b45786'
+  'livenet': '000000000000000013413cf2536b491bf0988f52e90c476ffeb701c8bfdb1db9',
+  'testnet': '0000000058cc069d964711cd25083c0a709f4df2b34c8ff9302ce71fe5b45786'
 };
 var stopBlock = {
-  'livenet/bcc': '00000000000000000b539ef570128acb953af3dbcfc19dd8e6066949672311a1',
-  'testnet/bcc': '00000000d0bc4271bcefaa7eb25000e345910ba16b91eb375cd944b68624de9f'
+  'livenet': '00000000000000000b539ef570128acb953af3dbcfc19dd8e6066949672311a1',
+  'testnet': '00000000d0bc4271bcefaa7eb25000e345910ba16b91eb375cd944b68624de9f'
 };
 var txHash = {
-  'livenet/bcc': '22231e8219a0617a0ded618b5dc713fdf9b0db8ebd5bb3322d3011a703119d3b',
-  'testnet/bcc': '22231e8219a0617a0ded618b5dc713fdf9b0db8ebd5bb3322d3011a703119d3b'
+  'livenet': '22231e8219a0617a0ded618b5dc713fdf9b0db8ebd5bb3322d3011a703119d3b',
+  'testnet': '22231e8219a0617a0ded618b5dc713fdf9b0db8ebd5bb3322d3011a703119d3b'
 };
 
 // These tests require a running bitcoind instance
