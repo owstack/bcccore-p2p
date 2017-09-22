@@ -18,7 +18,7 @@
     "url": "https://github.com/owstack/bcccore-p2p.git"
   },
   "dependencies": {
-    "bcoin": "1.0.0-beta.14",
+    "bcoin": "1.0.0-beta.12",
     "bcccore-lib": "https://github.com/owstack/bcccore-lib.git",
     "bloom-filter": "^0.2.0",
     "buffers": "https://github.com/owstack/node-buffers",
