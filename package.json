@@ -18,8 +18,7 @@
     "url": "https://github.com/owstack/bcccore-p2p.git"
   },
   "dependencies": {
-    "bcoin": "1.0.0-beta.12",
-    "bcccore-lib": "https://github.com/owstack/bcccore-lib.git",
+    "bcccore-lib": "https://github.com/owstack/bcccore-lib",
     "bloom-filter": "^0.2.0",
     "buffers": "https://github.com/owstack/node-buffers",
     "socks5-client": "^0.3.6"
@@ -28,7 +27,7 @@
     "brfs": "^1.2.0",
     "chai": "~1.10.0",
     "gulp": "^3.8.10",
-    "ows-build": "https://github.com/owstack/ows-build.git",
+    "ows-build": "https://github.com/owstack/ows-build",
     "sinon": "^1.12.2"
   },
   "license": "MIT"
