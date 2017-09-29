@@ -4,12 +4,12 @@
 
 var should = require('chai').should();
 
-var bcccore = require('bcccore-lib');
+var bchLib = require('bch-lib');
 var P2P = require('../');
 var Inventory = P2P.Inventory;
-var BufferUtils = bcccore.util.buffer;
-var BufferWriter = bcccore.encoding.BufferWriter;
-var BufferReader = bcccore.encoding.BufferReader;
+var BufferUtils = bchLib.util.buffer;
+var BufferWriter = bchLib.encoding.BufferWriter;
+var BufferReader = bchLib.encoding.BufferReader;
 
 describe('Inventory', function() {
 

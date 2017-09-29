@@ -4,8 +4,8 @@
 
 var should = require('chai').should();
 var utils = require('../../lib/messages/utils');
-var bcccore = require('bcccore-lib');
-var BufferReader = bcccore.encoding.BufferReader;
+var bchLib = require('bch-lib');
+var BufferReader = bchLib.encoding.BufferReader;
 
 describe('Message Utils', function() {
 

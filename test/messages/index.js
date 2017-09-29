@@ -7,7 +7,7 @@ var Buffers = require('buffers');
 var P2P = require('../../');
 var Messages = P2P.Messages;
 var messages = new Messages();
-var bcccore = require('bcccore-lib');
+var bchLib = require('bch-lib');
 var Data = require('../data/messages'); //todo merge with commandData
 var commandData = require('../data/messages.json');
 
@@ -25,31 +25,31 @@ describe('Messages', function() {
 
   describe('@constructor', function() {
     it('sets properties correctly', function() {
-      var network = bcccore.Networks.defaultNetwork;
+      var network = bchLib.Networks.defaultNetwork;
       var messages = new Messages({
         network: network,
-        Block: bcccore.Block,
-        Transaction: bcccore.Transaction
+        Block: bchLib.Block,
+        Transaction: bchLib.Transaction
       });
       should.exist(messages.builder.commands);
       should.exist(messages.builder.constructors);
-      messages.builder.constructors.Block.should.equal(bcccore.Block);
-      messages.builder.constructors.Transaction.should.equal(bcccore.Transaction);
+      messages.builder.constructors.Block.should.equal(bchLib.Block);
+      messages.builder.constructors.Transaction.should.equal(bchLib.Transaction);
       messages.network.should.deep.equal(network);
     });
     it('network should be unique for each set of messages', function() {
       var messages = new Messages({
-        network: bcccore.Networks.livenet
+        network: bchLib.Networks.livenet
       });
       var messages2 = new Messages({
-        network: bcccore.Networks.testnet
+        network: bchLib.Networks.testnet
       });
-      messages.network.should.deep.equal(bcccore.Networks.livenet);
-      messages2.network.should.deep.equal(bcccore.Networks.testnet);
+      messages.network.should.deep.equal(bchLib.Networks.livenet);
+      messages2.network.should.deep.equal(bchLib.Networks.testnet);
       var message1 = messages.Version();
-      message1.network.should.deep.equal(bcccore.Networks.livenet);
+      message1.network.should.deep.equal(bchLib.Networks.livenet);
       var message2 = messages2.Version();
-      message2.network.should.deep.equal(bcccore.Networks.testnet);
+      message2.network.should.deep.equal(bchLib.Networks.testnet);
     });
   });
 
@@ -91,7 +91,7 @@ describe('Messages', function() {
       var name = messages.builder.commandsMap[command];
       it(name, function() {
         var message = messages[name]();
-        message.network.should.deep.equal(bcccore.Networks.defaultNetwork);
+        message.network.should.deep.equal(bchLib.Networks.defaultNetwork);
       });
     });
 
@@ -194,11 +194,11 @@ describe('Messages', function() {
 
   describe('#add', function() {
     it('should add a custom message', function() {
-      var network = bcccore.Networks.defaultNetwork;
+      var network = bchLib.Networks.defaultNetwork;
       var messages = new Messages({
         network: network,
-        Block: bcccore.Block,
-        Transaction: bcccore.Transaction
+        Block: bchLib.Block,
+        Transaction: bchLib.Transaction
       });
 
       var CustomMessage = function(arg, options) {

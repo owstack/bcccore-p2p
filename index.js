@@ -1,4 +1,6 @@
-var bcccore = require('bcccore-lib');
-bcccore.P2P = require('./lib');
+'use strict;'
 
-module.exports = bcccore.P2P;
+var bchLib = require('bch-lib');
+bchLib.P2P = require('./lib');
+
+module.exports = bchLib.P2P;

@@ -10,14 +10,14 @@ var expect = chai.expect;
 var sinon = require('sinon');
 var fs = require('fs');
 
-var bcccore = require('bcccore-lib');
-var _ = bcccore.deps._;
+var bchLib = require('bch-lib');
+var _ = bchLib.deps._;
 var P2P = require('../');
 var Peer = P2P.Peer;
 var EventEmitter = require('events').EventEmitter;
 var Messages = P2P.Messages;
 var messages = new Messages();
-var Networks = bcccore.Networks;
+var Networks = bchLib.Networks;
 
 describe('Peer', function() {
 

@@ -1,7 +1,7 @@
 {
-  "name": "bcccore-p2p",
+  "name": "bch-p2p",
   "version": "0.0.1",
-  "description": "Interface to the bitcoin cash P2P network for bcccore.",
+  "description": "Interface to the bitcoin cash P2P network for Bch Node.",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
@@ -11,14 +11,14 @@
   },
   "keywords": [
     "bitcoin",
-    "bcccore"
+    "bch"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/owstack/bcccore-p2p.git"
+    "url": "https://github.com/owstack/bch-p2p.git"
   },
   "dependencies": {
-    "bcccore-lib": "https://github.com/owstack/bcccore-lib",
+    "bch-lib": "https://github.com/owstack/bch-lib",
     "bloom-filter": "^0.2.0",
     "buffers": "https://github.com/owstack/node-buffers",
     "socks5-client": "^0.3.6"

@@ -5,7 +5,7 @@ var expect = require('chai').expect;
 var P2P = require('../../../');
 var Messages = P2P.Messages;
 var sinon = require('sinon');
-var bcccore = require('bcccore-lib');
+var bchLib = require('bch-lib');
 
 describe('Command Messages', function() {
 
@@ -46,18 +46,18 @@ describe('Command Messages', function() {
   describe('Transaction', function() {
 
     it('should accept a transaction instance as an argument', function() {
-      var tx = new bcccore.Transaction();
+      var tx = new bchLib.Transaction();
       var message = messages.Transaction(tx);
-      message.transaction.should.be.instanceof(bcccore.Transaction);
+      message.transaction.should.be.instanceof(bchLib.Transaction);
     });
 
     it('should create a transaction instance', function() {
       var message = messages.Transaction();
-      message.transaction.should.be.instanceof(bcccore.Transaction);
+      message.transaction.should.be.instanceof(bchLib.Transaction);
     });
 
     it('version should remain the same', function() {
-      var tx = new bcccore.Transaction();
+      var tx = new bchLib.Transaction();
       var version = Number(tx.version);
       var message = messages.Transaction(tx);
       message.transaction.version.should.equal(version);
@@ -68,12 +68,12 @@ describe('Command Messages', function() {
   describe('Block', function() {
 
     it('should accept a block instance as an argument', function() {
-      var block = new bcccore.Block({
+      var block = new bchLib.Block({
         header: {},
         transactions: []
       });
       var message = messages.Block(block);
-      message.block.should.be.instanceof(bcccore.Block);
+      message.block.should.be.instanceof(bchLib.Block);
     });
 
   });
