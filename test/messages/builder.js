@@ -3,7 +3,7 @@
 var should = require('chai').should();
 var P2P = require('../../');
 var builder = P2P.Messages.builder;
-var bcccore = require('bcccore-lib');
+var bchLib = require('bch-lib');
 
 describe('Messages Builder', function() {
 
@@ -18,9 +18,9 @@ describe('Messages Builder', function() {
     it('should return commands with customizations', function() {
       // instantiate
       var b = builder({
-        network: bcccore.Networks.testnet,
-        Block: bcccore.Block,
-        Transaction: bcccore.Transaction
+        network: bchLib.Networks.testnet,
+        Block: bchLib.Block,
+        Transaction: bchLib.Transaction
       });
       should.exist(b);
     });

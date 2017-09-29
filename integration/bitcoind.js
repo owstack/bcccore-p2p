@@ -6,19 +6,19 @@ var chai = require('chai');
 var should = chai.should();
 var sinon = require('sinon');
 
-var bcccore = require('bcccore-lib');
-var _ = bcccore.deps._;
-var Random = bcccore.crypto.Random;
-var BN = bcccore.crypto.BN;
-var BufferUtil = bcccore.util.buffer;
+var bchLib = require('bch-lib');
+var _ = bchLib.deps._;
+var Random = bchLib.crypto.Random;
+var BN = bchLib.crypto.BN;
+var BufferUtil = bchLib.util.buffer;
 var p2p = require('../');
 var Peer = p2p.Peer;
 var Pool = p2p.Pool;
-var Networks = bcccore.Networks;
+var Networks = bchLib.Networks;
 var Messages = p2p.Messages;
 var Inventory = p2p.Inventory;
-var Block = bcccore.Block;
-var Transaction = bcccore.Transaction;
+var Block = bchLib.Block;
+var Transaction = bchLib.Transaction;
 
 // config 
 var network = process.env.NETWORK === 'testnet' ? Networks.testnet : Networks.livenet;

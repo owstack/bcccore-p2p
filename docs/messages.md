@@ -1,5 +1,5 @@
 # Messages
-The bitcoin protocol specifies a set of [messages](https://en.bitcoin.it/wiki/Protocol_specification) that can be sent from peer to peer. `bcccore-p2p` provides support for some of these messages.
+The bitcoin protocol specifies a set of [messages](https://en.bitcoin.it/wiki/Protocol_specification) that can be sent from peer to peer. `bch-p2p` provides support for some of these messages.
 
 To create a message, you can use any of the message constructors, here is a simple example:
 
@@ -16,7 +16,7 @@ message = messages.GetData.forBlock(blockHash);
 message = messages.Inventory.forTransaction(txHash);
 ```
 
-As well as sending "tx" and "block" messages with Bcccore instances:
+As well as sending "tx" and "block" messages with Bch Node instances:
 
 ```javascript
 message = messages.Block(block);
@@ -39,7 +39,7 @@ var messages = new Messages({network: Networks.testnet});
 
 ## List of Messages
 ### Version
-The version message (`ver`) is used on connection creation, to advertise the type of node. The remote node will respond with its version, and no communication is possible until both peers have exchanged their versions. By default, bcccore advertises itself as named `bcccore` with the current version of the `bcccore-p2p` package.
+The version message (`ver`) is used on connection creation, to advertise the type of node. The remote node will respond with its version, and no communication is possible until both peers have exchanged their versions. By default, bch advertises itself as named `bch` with the current version of the `bch-p2p` package.
 
 ### VerAck
 Finishes the connection handshake started by the `ver` message.
