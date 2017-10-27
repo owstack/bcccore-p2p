@@ -4,7 +4,7 @@
 
 var should = require('chai').should();
 var utils = require('../../lib/messages/utils');
-var bchLib = require('bch-lib');
+var bchLib = require('@owstack/bch-lib');
 var BufferReader = bchLib.encoding.BufferReader;
 
 describe('Message Utils', function() {

@@ -10,7 +10,7 @@ var expect = chai.expect;
 var sinon = require('sinon');
 var fs = require('fs');
 
-var bchLib = require('bch-lib');
+var bchLib = require('@owstack/bch-lib');
 var _ = bchLib.deps._;
 var P2P = require('../');
 var Peer = P2P.Peer;

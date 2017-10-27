@@ -5,8 +5,8 @@ The quickest way to get connected is to run the following:
 
 ```javascript
 
-var Pool = require('bch-p2p').Pool;
-var Networks = require('bch-lib').Networks;
+var Pool = require('@owstack/bch-p2p').Pool;
+var Networks = require('@owstack/bch-lib').Networks;
 
 var pool = new Pool({network: Networks.livenet});
 

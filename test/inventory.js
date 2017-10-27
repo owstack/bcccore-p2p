@@ -4,7 +4,7 @@
 
 var should = require('chai').should();
 
-var bchLib = require('bch-lib');
+var bchLib = require('@owstack/bch-lib');
 var P2P = require('../');
 var Inventory = P2P.Inventory;
 var BufferUtils = bchLib.util.buffer;

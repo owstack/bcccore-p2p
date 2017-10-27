@@ -13,7 +13,7 @@ npm install bch-p2p --save
 ## Quick Start
 
 ```javascript
-var Peer = require('bch-p2p').Peer;
+var Peer = require('@owstack/bch-p2p').Peer;
 var peer = new Peer({host: '5.9.85.34'});
 
 // handle events

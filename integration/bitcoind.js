@@ -6,7 +6,7 @@ var chai = require('chai');
 var should = chai.should();
 var sinon = require('sinon');
 
-var bchLib = require('bch-lib');
+var bchLib = require('@owstack/bch-lib');
 var _ = bchLib.deps._;
 var Random = bchLib.crypto.Random;
 var BN = bchLib.crypto.BN;
