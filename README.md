@@ -9,10 +9,6 @@ Adds [Bitcoin protocol](https://en.bitcoin.it/wiki/Protocol_documentation) suppo
 
 See [the main bch repo](https://github.com/owstack/bch) for more information.
 
-## Attribution
-
-This repository was created by copy forking [bitcore-p2p 59fbc03](https://github.com/bitpay/bitcore-p2p/commit/59fbc037153725a9007264e1d63edeec24d222cd).
-
 ## Getting Started
 
 ```sh
