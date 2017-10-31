@@ -1,6 +1,6 @@
 {
   "name": "@owstack/bch-p2p",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Interface to the bitcoin cash P2P network for Bch Node.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@owstack/bch-lib": "^0.0.3",
-    "@owstack/buffers": "^0.0.1",
+    "@owstack/buffers": "^0.0.2",
     "bloom-filter": "^0.2.0",
     "socks5-client": "^0.3.6"
   },
